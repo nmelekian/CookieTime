@@ -35,6 +35,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Cookie Calc", systemImage: "lightbulb")
                 }
+            
+            LearnerPracticeView()
+                .tabItem {
+                    Label("Learner Practice", systemImage: "lightbulb")
+                }
         
         }
         
