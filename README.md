@@ -1,3 +1,7 @@
+
+![Cookie Monster](https://github.com/nmelekian/CookieTime/assets/120026174/60505b92-8357-4ba9-a1bb-ea2bdd8ee0b2)
+
+
 # CookieTime
 
 You have to help Cookie Monster, CEO of CookieTime Industries. Cookie Monster is trying to break into the digital marketplace, and wants your help.
