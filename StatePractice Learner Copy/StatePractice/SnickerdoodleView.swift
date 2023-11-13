@@ -5,9 +5,9 @@
 import SwiftUI
 
 struct SnickerdoodleView: View {
+    // Make sure to include @State Variables to ensure they display properly on screen
 
     var body: some View {
-        
         ZStack {
             Color("Background")
                 .ignoresSafeArea()

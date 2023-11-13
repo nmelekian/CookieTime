@@ -13,8 +13,8 @@
 import SwiftUI
 
 struct CookieCalculatorView: View {
-  
-    @State var total = 0
+  // Make sure to include @State Variables to ensure they display properly on screen
+    var total = 0
     var body: some View {
         ZStack {
             Color("Background")

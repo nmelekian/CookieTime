@@ -22,9 +22,7 @@ struct ContentView: View {
                     Label("ChocoChip", systemImage: "lightbulb")
                         .foregroundColor(.black)
                 }
-                .toolbarBackground(
-                    Color("Background"),
-                    for: .tabBar)
+               
             
             SnickerdoodleView()
                 .tabItem {

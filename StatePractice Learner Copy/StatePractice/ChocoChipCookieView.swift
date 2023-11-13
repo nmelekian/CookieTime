@@ -6,9 +6,10 @@ import SwiftUI
 
 
 struct ChocoChipCookieView: View {
+    // Make sure to include @State Variables to ensure they display properly on screen. 
     var cookieDozenAmounts = [36,72,108,144,180]
-    @State var cookies = 36
-
+   @State var cookies = 36
+    
     
     var body: some View {
         
