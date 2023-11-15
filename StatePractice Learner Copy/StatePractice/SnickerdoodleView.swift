@@ -6,7 +6,7 @@ import SwiftUI
 
 struct SnickerdoodleView: View {
     // Make sure to include @State Variables to ensure they display properly on screen
-
+@State private var isVegan = false
     var body: some View {
         ZStack {
             Color("Background")
@@ -18,11 +18,11 @@ struct SnickerdoodleView: View {
                 //Place an input here that lets the user TOGGLE if they want to make the recipe vegan friendly
                 //TODO: Make a toggle that let's the user swap between ingredients
                 
-                
+                Toggle("Vegan Ingredients", isOn: $isVegan)
                 
                 
                 //TODO: Ensure that your variable is tied to the igredientsview to toggle the different ingredients
-                SnickerdoodleIngredientsView(isVegan: false)
+                SnickerdoodleIngredientsView(isVegan: isVegan)
                     .padding()
             }
             

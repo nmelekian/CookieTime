@@ -14,7 +14,9 @@ import SwiftUI
 
 struct CookieCalculatorView: View {
   // Make sure to include @State Variables to ensure they display properly on screen
-    var total = 0
+    @State var total = 0
+    @State var partyGoers = 0
+    @State var cookieCount = 0
     var body: some View {
         ZStack {
             Color("Background")
@@ -27,10 +29,14 @@ struct CookieCalculatorView: View {
                 
             //TODO: make steppers here. what should the steppers do or represent?
                 
+                Stepper("Number of Cookies: \(cookieCount)", value: $cookieCount, in: 0...100)
+                
+                Stepper("Number of Guests: \(partyGoers)", value: $partyGoers, in: 0...1000, step: 10)
+                
                 
                 Button("Calculate cookie total") {
                     //TODO: multiply the results of the stepper
-//                    total =
+                    total = partyGoers * cookieCount
                 }
                 .padding()
                 .foregroundColor(.white)
